@@ -65,6 +65,7 @@
   // we set a click event listener on the start button
   startBtn.addEventListener("click", function(e) {
     startGame()
+    createProgressbar('progressbar', '10s')
   })
 
   // we add a click event listener on the click area div to update the score when the user will click
@@ -74,3 +75,28 @@
       scoreTxt.textContent = score
     }
   })
+
+/*
+ *  Creates a progressbar.
+ *  @param id the id of the div we want to transform in a progressbar
+ *  @param duration the duration of the timer example: '10s'
+ *  @param callback, optional function which is called when the progressbar reaches 0.
+ */
+function createProgressbar(id, duration) {
+  // We select the div that we want to turn into a progressbar
+  const progressbar = document.querySelector('.progressbar-main')
+  progressbar.className = 'progressbar'
+
+  // We create the div that changes width to show progress
+  const progressBarInner = document.createElement('div')
+  progressBarInner.className = 'inner'
+
+  // Now we set the animation parameters
+  progressBarInner.style.animationDuration = duration
+
+  // Append the progressbar to the main progressbardiv
+  progressbar.appendChild(progressBarInner)
+
+  // When everything is set up we start the animation
+  progressBarInner.style.animationPlayState = 'running'
+}
