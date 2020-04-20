@@ -9,3 +9,7 @@ Ambrose Ben Tiba
 Catherine Ye
 
 Sabrina Malki
+
+*SPECIAL THANKS*
+
+Rory McCrossan on the stack overflow forums who provided an outdated but still helpful demonstration on how to make a progress bar. 
