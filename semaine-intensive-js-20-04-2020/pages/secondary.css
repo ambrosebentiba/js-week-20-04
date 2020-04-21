@@ -1,0 +1,104 @@
+body
+{
+    background-color: #FFEEE1;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+}
+
+#logo
+{
+    margin-left: 50px;
+}
+
+/* MAIN */
+
+main
+{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;  
+    background-color: #FFF8F3;
+    height: 600px;
+    border-radius: 5%;
+    justify-content: space-around;
+    user-select: none;
+}
+
+main img
+{
+    width: 250px;
+    height: 250px;
+}
+
+main div
+{
+    padding-top: 150px;
+}
+
+.container
+{
+    background-color: #FFFCFA;
+    height: 150px;
+    width: 240px;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+p
+{
+    line-height: 50px;
+}
+
+a
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #D95763;
+    width: 120px;
+    height: 40px;
+    padding: 20px 105px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+/*
+.progressbar 
+{
+    width: 80%;
+    margin: 25px auto;
+    border: solid 1px #000;
+
+}
+
+.progressbar .inner 
+{
+    height: 15px;
+    animation: progressbar-countdown;
+    /* Placeholder, this will be updated using javascript
+    animation-duration: 10s;
+    /* We stop in the end
+    animation-iteration-count: 1;
+    /* Stay on pause when the animation is finished finished
+    animation-fill-mode: forwards;
+    /* We start paused, we start the animation using javascript
+    animation-play-state: paused;
+    /* We want a linear animation, ease-out is standard
+    animation-timing-function: linear;
+}
+
+@keyframes progressbar-countdown 
+{
+    0%
+    {
+      width: 0%;
+      background: #5cb555;
+    }
+    100%
+    {
+      width: 100%;
+      background: #eb4a4a;
+    }
+}
+*/
