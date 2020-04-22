@@ -1,27 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta class="UTF_8">
+        <meta name="viewport" content="width=device-width,initial-scales=1.0">
         <link rel="stylesheet" href="main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
-        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>Fat Runner</title>
     </head>
     <body>
         <img src="player_characters_SIJS/GIF/title_fatrunner.png" alt="logo du jeu Fat Runner" id="logo">
         <main>
-            <div class="character">
-                <a href="pages/game.html"><span class="timmy_img"></span></a>
-                <span>Timmy</span>
+            <div id="first_page">
+                <div class="character">
+                    <a href="#"><span class="timmy_img"></span></a>
+                    <span>Timmy</span>
+                </div>
+                <p>
+                    Choose a character
+                </p>
+                <div class="character">
+                    <a href="pages/game.html"><span class="tiny_img"></span></a>
+                    <span>Tiny</span>
+                </div>
             </div>
-            <p>
-                Choose a character<br/>
-                Start
-            </p>
-            <div class="character">
-                <a href="pages/game.html"><span class="tiny_img"></span></a>
-                <span>Tiny</span>
+            <div id="second_page" class="clickarea">
+                    <div>
+                        <img src="player_characters_SIJS/GIF/sport_boy.gif" alt="image de Timmy qui fait du sport">
+                        <div class="progressbar">
+                            <div class="inner" style="animation-duration: 10s; animation-play-state: running;">
+                            </div>
+                        </div>
+                    </div>
+                    <div>    
+                    <div class="container">
+                        <p class="">
+                            Timer: <span class="timer">0</span><br/>
+                            Clicks/s: <span class="clicks">0</span><br/>
+                            Score: <span class="score">0</span>
+                        </p>
+                    </div>
+                    <a href="#" class="start">Start</a>
+                </div>
             </div>
         </main>
+        <script src="script.js"></script>    
     </body>
 </html>
