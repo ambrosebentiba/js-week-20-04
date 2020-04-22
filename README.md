@@ -19,3 +19,5 @@ Manuel Dreumont
 *SPECIAL THANKS*
 
 Rory McCrossan on the stack overflow forums who provided an outdated but still helpful demonstration on how to make a progress bar. 
+
+this website is open source and can be modified s you wish 
