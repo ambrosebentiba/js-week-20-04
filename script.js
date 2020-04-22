@@ -9,10 +9,6 @@
     const clicksTxt = document.querySelector(".clicks")
     const startBtn = document.querySelector(".start")
     const clickArea = document.querySelector(".clickarea")
-    const firstPage = document.querySelector('#first_page')
-    const secondPage = document.querySelector('#second_page')
-    const firstTimmy = firstPage.querySelector('.timmy_img')
-    const firstTiny = firstPage.querySelector('.tiny_img')
 
     // we define two functions for showing or hiding a HTML element such as the start button or images
     const show = function(elem) 
@@ -80,21 +76,11 @@
     }, 10)
   }
 
-  function changePage()
-  {
-    hide(firstPage)
-    showBlock(secondPage)
-  }
-
-  firstTimmy.addEventListener('click', function(e)
-  {
-    changePage()
-  })
-
   // we set a click event listener on the start button
   startBtn.addEventListener("click", function(e) 
   {
     startGame()
+    choosePic()
   })
 
   // we add a click event listener on the click area div to update the score when the user will click
@@ -105,4 +91,48 @@
       score++
       scoreTxt.textContent = score
     }
+    // clickArea.style.background = 'black'
   })
+
+  // PART CONCERNING SWITCHES BETWEEN MENUS AND CHARACTERS
+
+  // FIRST PAGE ELEMENTS
+  const firstPage = document.querySelector('#first_page')
+  const firstTimmy = firstPage.querySelector('.timmy_img')
+  const firstTiny = firstPage.querySelector('.tiny_img')
+
+  // SECOND PAGE ELEMENTS
+  const secondPage = document.querySelector('#second_page')
+  let timmyWeights = secondPage.querySelector('.sport_boy')
+  let tinyWeights = secondPage.querySelector('.sport_girl')
+
+
+
+  function changePage()
+  {
+    hide(firstPage)
+    showBlock(secondPage)
+  }
+
+  firstTimmy.addEventListener('click', function(e)
+  {
+    changePage()
+    tinyWeights.style.display = 'none'
+  })  
+  
+  firstTiny.addEventListener('click', function(e)
+  {
+    changePage()
+    timmyWeights.style.display = 'none'
+  })
+
+  const myPicsTiny = new Array("player_characters_SIJS/GIF/jumping_girl.gif", "player_characters_SIJS/GIF/running_girl.gif", "player_characters_SIJS/GIF/pushup_girl.gif")  
+  
+  const myPicsTimmy = new Array("player_characters_SIJS/GIF/jumping_boy.gif", "player_characters_SIJS/GIF/running_boy.gif", "player_characters_SIJS/GIF/pushup_boy.gif")
+
+  function choosePic()
+  {
+    let randomNum = Math.floor(Math.random() * myPicsTiny.length)
+    tinyWeights.src = myPicsTiny[randomNum]
+    timmyWeights.src = myPicsTimmy[randomNum]
+  }
