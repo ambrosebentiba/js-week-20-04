@@ -28,7 +28,6 @@ main
     justify-content: center;
     text-align: center;
     align-items: center;
-    display: none;
 }
 
 #first_page p
@@ -101,6 +100,7 @@ main
     justify-content: space-around;
     align-items: center;
     user-select: none;
+    visibility: hidden;
 }
 
 #second_page img
@@ -137,34 +137,3 @@ main
     border-radius: 5%;
     text-align: center;
 }
-
-
-.progressbar {
-    width: 80%;
-    margin: 25px auto;
-    border: solid 1px #000;
-  }
-  .progressbar .inner {
-    height: 15px;
-    animation: progressbar-countdown;
-    /* Placeholder, this will be updated using javascript */
-    animation-duration: 10s;
-    /* We stop in the end */
-    animation-iteration-count: 1;
-    /* Stay on pause when the animation is finished finished */
-    animation-fill-mode: forwards;
-    /* We start paused, we start the animation using javascript */
-    animation-play-state: paused;
-    /* We want a linear animation, ease-out is standard */
-    animation-timing-function: linear;
-  }
-  @keyframes progressbar-countdown {
-    0% {
-      width: 0%;
-      background: #5cb555;
-    }
-    100% {
-      width: 100%;
-      background: #eb4a4a;
-    }
-  }
