@@ -9,77 +9,137 @@ body
     margin-left: 50px;
 }
 
-/* MAIN */
-
 main
 {
     width: 960px;
     margin: 0 auto;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    background-color: #FFF8F3;
     height: 600px;
     border-radius: 5%;
+    background-color: #FFF8F3;
 }
 
-main p
+/** FIRST PAGE **/
+
+#first_page
 {
-    margin: 270px 50px 0 50px; 
+    width: 960px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: none;
+}
+
+#first_page p
+{
+    margin: 0 50px; 
     text-transform: uppercase;
 }
 
-.character
-{
-    margin-top: 180px;
-}
-
-main span
+#fist_page span
 {
     display: block;
 }
 
-/* Images */
-
-.timmy_img{
-  width: 200px;
-  height: 200px;
-  display: block;
-  background: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/sleeping_boy.gif) no-repeat;
-  background-size: cover;
+.timmy_img
+{
+    width: 200px;
+    height: 200px;
+    display: block;
+    background: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/sleeping_boy.gif) no-repeat;
+    background-size: cover;
 }
 
-.timmy_img:hover{
-  background-image: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/jumping_boy.gif);
-  background-size: cover;
+.timmy_img:hover
+{
+    background-image: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/jumping_boy.gif);
+    background-size: cover;
 }
 
-.tiny_img{
-  width: 200px;
-  height: 200px;
-  display: block;
-  background: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/sleeping_girl.gif) no-repeat;
-  background-size: cover;
+.tiny_img
+{
+    width: 200px;
+    height: 200px;
+    display: block;
+    background: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/sleeping_girl.gif) no-repeat;
+    background-size: cover;
 }
 
-.tiny_img:hover{
-  background-image: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/jumping_girl.gif);
-  background-size: cover;
+.tiny_img:hover
+{
+    background-image: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/jumping_girl.gif);
+    background-size: cover;
+}
+
+.character
+{
+    height: 220px;
 }
 
 .character:hover
 {
-    height: 220px;
     background-color: #F37C7D;
     border-radius: 25%;
     transition: background linear 0.25s;
-    padding-bottom: 15px;
 }
 
-/* /MAIN */
 
 
-/* .progressbar {
+/** /FIRST PAGE **/
+
+/** SECOND PAGE **/
+
+#second_page
+{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;  
+    background-color: #FFF8F3;
+    height: 600px;
+    border-radius: 5%;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+}
+
+#second_page img
+{
+    width: 250px;
+    height: 250px;
+}
+
+#second_page span
+{
+    display: inline;
+}
+
+.container
+{
+    background-color: #FFFCFA;
+    height: 150px;
+    width: 240px;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+    line-height: 50px;
+}
+
+.start
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #D95763;
+    width: 120px;
+    height: 40px;
+    padding: 20px 105px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+
+.progressbar {
     width: 80%;
     margin: 25px auto;
     border: solid 1px #000;
@@ -87,15 +147,15 @@ main span
   .progressbar .inner {
     height: 15px;
     animation: progressbar-countdown;
-     Placeholder, this will be updated using javascript 
+    /* Placeholder, this will be updated using javascript */
     animation-duration: 10s;
-     We stop in the end 
+    /* We stop in the end */
     animation-iteration-count: 1;
-     Stay on pause when the animation is finished finished 
+    /* Stay on pause when the animation is finished finished */
     animation-fill-mode: forwards;
-     We start paused, we start the animation using javascript 
+    /* We start paused, we start the animation using javascript */
     animation-play-state: paused;
-     We want a linear animation, ease-out is standard 
+    /* We want a linear animation, ease-out is standard */
     animation-timing-function: linear;
   }
   @keyframes progressbar-countdown {
@@ -108,4 +168,3 @@ main span
       background: #eb4a4a;
     }
   }
-   */
