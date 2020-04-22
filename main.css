@@ -137,3 +137,35 @@ main
     border-radius: 5%;
     text-align: center;
 }
+
+/** FOOTER **/
+
+footer
+{
+    width: 60vw;
+    margin: 0 auto;
+    padding: 20px 10px;
+    height: 150px;
+    background: red;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact, .repo, .socials
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_span
+{
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+h3
+{
+    font-size: 13px;
+}
