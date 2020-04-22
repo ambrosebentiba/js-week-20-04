@@ -11,30 +11,37 @@
     const clickArea = document.querySelector(".clickarea")
 
     // we define two functions for showing or hiding a HTML element such as the start button or images
-    const show = function(elem) {
+    const show = function(elem) 
+    {
       elem.style.display = 'inline'
     }
 
-    const hide = function(elem) {
+    const hide = function(elem) 
+    {
       elem.style.display = 'none'
     }
 
     // Function to start the game
-    function startGame() {
+    function startGame() 
+    {
       hide(startBtn)
       score = -1
       ended = false
       startTime = new Date().getTime()
 
       // setting an interval
-      let timerId = setInterval(function() {
+      let timerId = setInterval(function() 
+      {
         let total = (new Date().getTime() - startTime) / 1000
 
         // while total lower than duration, we update timer and the clicks by seconds
-        if (total < duration) {
+        if (total < duration) 
+        {
           timerTxt.textContent = total.toFixed(3)
           clicksTxt.textContent = (score / total).toFixed(2)
-        } else {
+        } 
+        else 
+        {
           // otherwise, game is ended, we clear interval and we set game as ended
           ended = true
           clearInterval(timerId)
@@ -45,7 +52,8 @@
   }
 
   // end game method
-  function endGame() {
+  function endGame() 
+  {
     // we write final stats
     let clicsBySeconds = (score / duration).toFixed(2)
     timerTxt.textContent = duration.toFixed(3)
@@ -55,7 +63,8 @@
 
     // we display result to the user in delayed mode 
     //to update DOM elements just before the alert
-    setTimeout(function() {
+    setTimeout(function() 
+    {
       alert('You made ' + score + ' clicks in ' + duration + 
       ' seconds. It is ' + clicsBySeconds + 
       ' clicks by seconds. Try again!')
@@ -63,14 +72,16 @@
   }
 
   // we set a click event listener on the start button
-  startBtn.addEventListener("click", function(e) {
+  startBtn.addEventListener("click", function(e) 
+  {
     startGame()
     createProgressbar('progressbar', '10s')
   })
 
   // we add a click event listener on the click area div to update the score when the user will click
   clickArea.addEventListener("click", function(e) {
-    if (!ended) {
+    if (!ended) 
+    {
       score++
       scoreTxt.textContent = score
     }
@@ -82,7 +93,8 @@
  *  @param duration the duration of the timer example: '10s'
  *  @param callback, optional function which is called when the progressbar reaches 0.
  */
-function createProgressbar(id, duration) {
+function createProgressbar(id, duration) 
+{
   // We select the div that we want to turn into a progressbar
   const progressbar = document.querySelector('.progressbar-main')
   progressbar.className = 'progressbar'
