@@ -10,6 +10,8 @@ Catherine Ye
 
 Sabrina Malki
 
+Ulysse Darmon
+
 *SPECIAL THANKS*
 
 Rory McCrossan on the stack overflow forums who provided an outdated but still helpful demonstration on how to make a progress bar. 
