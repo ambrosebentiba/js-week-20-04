@@ -22,6 +22,11 @@ p
     text-align: center;
 }
 
+.character
+{
+    display: flex;
+}
+
 .option
 {
     text-align: center;
@@ -43,7 +48,7 @@ a
 a:hover{
     color: #F34022;
     background-color: #FFF;
-    text-shadow: 2px 2px #000;
+    text-shadow: 2px 2px #000000;
     transition: background linear 0.25s;
 }
 
