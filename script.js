@@ -50,33 +50,31 @@
           // otherwise, game is ended, we clear interval and we set game as ended
           ended = true
           clearInterval(timerId)
-          // we call the end game method
+          // WE CALL THE ENDGAME FUNCTION
           endGame()
         }
       }, 1)
   }
 
-  // end game method
+  // END GAME FUNCTION
   function endGame() 
   {
-    // we write final stats
+    // WRITING FINAL STATS 
     let clicsBySeconds = (score / duration).toFixed(2)
     timerTxt.textContent = duration.toFixed(3)
     clicksTxt.textContent = clicsBySeconds
-    // we show start button to play an other game
+    // BUTTON SHOWING BACK TO MAKE THE GAME REPLAYABLE
     show(startBtn)
 
-    // we display result to the user in delayed mode 
-    //to update DOM elements just before the alert
+    // DISPLAYING RESULTS TO THE USER IN DELAYED MODE
+    //TO UPDATE THE USER JUST BEFORE THE ALERT
     setTimeout(function() 
     {
-      alert('You made ' + score + ' clicks in ' + duration + 
-      ' seconds. It is ' + clicsBySeconds + 
-      ' clicks by seconds. Try again!')
+      // location = "/pages/game.html"
     }, 10)
   }
 
-  // we set a click event listener on the start button
+  // WE SET A CLICK EVENT LISTENER ON THE START BUTTON
   startBtn.addEventListener("click", function(e) 
   {
     startGame()
@@ -91,7 +89,7 @@
       score++
       scoreTxt.textContent = score
     }
-    // clickArea.style.background = 'black'
+    tap()
   })
 
   // PART CONCERNING SWITCHES BETWEEN MENUS AND CHARACTERS
@@ -135,4 +133,13 @@
     let randomNum = Math.floor(Math.random() * myPicsTiny.length)
     tinyWeights.src = myPicsTiny[randomNum]
     timmyWeights.src = myPicsTimmy[randomNum]
+  }
+
+  const tap = function()
+  {
+    clickArea.style.border = 'solid 2px #AAAAAA'
+    setTimeout(function()
+    {
+      clickArea.style.border = 'solid 2px #FFEEE325'
+    }, 100)
   }
