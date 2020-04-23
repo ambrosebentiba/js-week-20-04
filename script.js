@@ -16,7 +16,7 @@
       elem.style.display = 'inline'
     }
 
-    const showBlock = function(elem)
+    const showVisible = function(elem)
     {
       elem.style.visibility = 'visible'
     }
@@ -63,11 +63,11 @@
     let clicsBySeconds = (score / duration).toFixed(2)
     timerTxt.textContent = duration.toFixed(3)
     clicksTxt.textContent = clicsBySeconds
-    // BUTTON SHOWING BACK TO MAKE THE GAME REPLAYABLE
-    show(startBtn)
+    // BUTTON SHOWING BACK TO MAKE THE GAME REPLAYABLE (not used because he is redirected)
+    // show(startBtn)
 
-    // DISPLAYING RESULTS TO THE USER IN DELAYED MODE
-    //TO UPDATE THE USER JUST BEFORE THE ALERT
+    // REDIRECTING THE USER TO AN END PAGE
+    //DEPENDING ON HIS SCORE
     setTimeout(function() 
     {
       if(score <= 19) 
@@ -128,13 +128,14 @@
   let tinyWeights = secondPage.querySelector('.sport_girl')
 
 
-
+  //TO CHANGE PAGE WHEN A CHARACTER IS CLICKED
   function changePage()
   {
     hide(firstPage)
-    showBlock(secondPage)
+    showVisible(secondPage)
   }
 
+  //SHOWS OR HIDES A CHARACTER DEPENDING ON WHICH ONE YOU SELECT 
   firstTimmy.addEventListener('click', function(e)
   {
     changePage()
@@ -147,10 +148,12 @@
     timmyWeights.style.display = 'none'
   })
 
+  //ARRAY OF IMAGES THAT WILL BE USED RANDOMLY IN GAME
   const myPicsTiny = new Array("player_characters_SIJS/GIF/jumping_girl.gif", "player_characters_SIJS/GIF/running_girl.gif", "player_characters_SIJS/GIF/pushup_girl.gif")  
   
   const myPicsTimmy = new Array("player_characters_SIJS/GIF/jumping_boy.gif", "player_characters_SIJS/GIF/running_boy.gif", "player_characters_SIJS/GIF/pushup_boy.gif")
 
+  //CHOOSES RANDOM PIC IN ARRY AND DISPLAYS IT 
   function choosePic()
   {
     let randomNum = Math.floor(Math.random() * myPicsTiny.length)
@@ -158,6 +161,7 @@
     timmyWeights.src = myPicsTimmy[randomNum]
   }
 
+  //ANIMATION FOR WHEN CLICKAREA IS CLICKED 
   const tap = function()
   {
     clickArea.style.border = 'solid 2px #AAAAAA'
