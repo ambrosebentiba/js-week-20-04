@@ -70,7 +70,30 @@
     //TO UPDATE THE USER JUST BEFORE THE ALERT
     setTimeout(function() 
     {
-      // location = "/pages/game.html"
+      if(score <= 19) 
+      {
+        window.location.href = "pages/0_19.html"
+      }
+      else if(score > 19 && score <= 39) 
+      {
+        window.location.href = "pages/20_39.html"
+      }
+      else if(score > 39 && score <= 59) 
+      {
+        window.location.href = "pages/40_59.html"
+      }
+      else if(score > 59 && score <= 79) 
+      {
+        window.location.href = "pages/60_79.html"
+      }
+      else if(score > 79 && score <= 99) 
+      {
+        window.location.href = "pages/80_99.html"
+      }
+      else
+      {
+        window.location.href = "pages/over_100.html"
+      }
     }, 10)
   }
 
