@@ -1,54 +1,29 @@
 body
 {
-    background-color: #FFEEE1;
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
+    font-size: 50px;
+    line-height: 100px;
 }
 
-#logo
+.gif
 {
-    margin-left: 50px;
-}
-
-/* MAIN */
-
-main
-{
-    width: 960px;
+    width: 300px;
+    height: 300px;
+    display: block;
     margin: 0 auto;
-    display: flex;  
-    background-color: #FFF8F3;
-    height: 600px;
-    border-radius: 5%;
-    justify-content: space-around;
-    user-select: none;
-}
-
-main img
-{
-    width: 250px;
-    height: 250px;
-}
-
-main div
-{
-    padding-top: 150px;
-}
-
-.container
-{
-    background-color: #FFFCFA;
-    height: 150px;
-    width: 240px;
-    padding: 20px;
-    padding-left: 30px;
-    border-radius: 5%;
-    margin-bottom: 50px;
 }
 
 p
 {
-    line-height: 50px;
+    color: #FFF;
+    text-shadow: 2px 2px #F34022;
+    text-align: center;
+}
+
+.option
+{
+    text-align: center;
 }
 
 a
@@ -56,6 +31,7 @@ a
     color: #FFF;
     text-decoration: none;
     background-color: #D95763;
+    text-shadow: 2px 2px #F34022;
     width: 120px;
     height: 40px;
     padding: 20px 105px;
@@ -63,42 +39,81 @@ a
     text-align: center;
 }
 
-/*
-.progressbar 
-{
-    width: 80%;
-    margin: 25px auto;
-    border: solid 1px #000;
-
+a:hover{
+    color: #F34022;
+    background-color: #FFF;
+    text-shadow: 2px 2px #000;
+    transition: background linear 0.25s;
 }
 
-.progressbar .inner 
+#logo
 {
-    height: 15px;
-    animation: progressbar-countdown;
-    /* Placeholder, this will be updated using javascript
-    animation-duration: 10s;
-    /* We stop in the end
-    animation-iteration-count: 1;
-    /* Stay on pause when the animation is finished finished
-    animation-fill-mode: forwards;
-    /* We start paused, we start the animation using javascript
-    animation-play-state: paused;
-    /* We want a linear animation, ease-out is standard
-    animation-timing-function: linear;
+    margin-left: 50px;
 }
 
-@keyframes progressbar-countdown 
+/* SCORE 0 to 19 CLICKS */
+.zero_ninety
 {
-    0%
-    {
-      width: 0%;
-      background: #5cb555;
-    }
-    100%
-    {
-      width: 100%;
-      background: #eb4a4a;
-    }
+    background-color: #000000;
+    height: 900px;
 }
-*/
+
+/* SCORE BETWEEN  20 to 39 CLICKS */
+
+.twenty_thirty_nine
+{
+    background-color: #FFF;
+    background-image: url(../player_characters_SIJS/failed.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* SCORE BETWEEN  40 to 59 CLICKS */
+
+.forty_fifty_nine
+{
+    background-color: #F34022;
+    background-image: url(../player_characters_SIJS/sunset.gif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* SCORE BETWEEN  60 TO 79 CLICKS */
+
+.sixty_seventy_nine
+{
+    background-color: #005167;
+    background-image: url(../player_characters_SIJS/city_bg.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* SCORE BETWEEN  80 TO 99 CLICKS */
+
+.eighty_ninety_nine
+{
+    background-color: #FBE1F5;
+    background-image: url(../player_characters_SIJS/almost.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* SCORE OVER 100 CLICKS */
+
+.over_one_hundred
+{
+    background-color: #061356;
+    background-image: url(../player_characters_SIJS/god_mode.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
