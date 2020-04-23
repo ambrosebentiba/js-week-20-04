@@ -1,0 +1,120 @@
+body
+{
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.gif
+{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+p
+{
+    color: #FFF;
+    text-shadow: 2px 2px #F34022;
+    text-align: center;
+}
+
+.option
+{
+    text-align: center;
+}
+
+a
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #D95763;
+    text-shadow: 2px 2px #F34022;
+    width: 120px;
+    height: 40px;
+    padding: 20px 105px;
+    border-radius: 5%;
+    text-align: center;
+}
+
+a:hover{
+    color: #F34022;
+    background-color: #FFF;
+    text-shadow: 2px 2px #000;
+    transition: background linear 0.25s;
+}
+
+#logo
+{
+    margin-left: 50px;
+}
+
+/* SCORE 0 to 19 CLICKS */
+.zero_ninety
+{
+    background-color: #000000;
+    height: 900px;
+}
+
+/* SCORE BETWEEN  20 to 39 CLICKS */
+
+.twenty_thirty_nine
+{
+    background-color: #FFF;
+    background-image: url(../player_characters_SIJS/failed.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* SCORE BETWEEN  40 to 59 CLICKS */
+
+.forty_fifty_nine
+{
+    background-color: #F34022;
+    background-image: url(../player_characters_SIJS/sunset.gif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* SCORE BETWEEN  60 TO 79 CLICKS */
+
+.sixty_seventy_nine
+{
+    background-color: #005167;
+    background-image: url(../player_characters_SIJS/city_bg.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* SCORE BETWEEN  80 TO 99 CLICKS */
+
+.eighty_ninety_nine
+{
+    background-color: #FBE1F5;
+    background-image: url(../player_characters_SIJS/almost.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+/* SCORE OVER 100 CLICKS */
+
+.over_one_hundred
+{
+    background-color: #061356;
+    background-image: url(../player_characters_SIJS/god_mode.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+}
