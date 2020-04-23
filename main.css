@@ -6,6 +6,12 @@ body
 
 #logo
 {
+    display: flex;
+    justify-content: center;
+}
+
+#logo img
+{
     margin-left: 50px;
 }
 
