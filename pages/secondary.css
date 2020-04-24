@@ -49,7 +49,7 @@ a
     color: #FFF;
     text-decoration: none;
     background-color: #D95763;
-    text-shadow: 2px 2px #F34022;
+    text-shadow: 2px 2px #AC3232;
     width: 120px;
     height: 40px;
     padding: 20px 105px;
@@ -58,9 +58,9 @@ a
 }
 
 a:hover{
-    color: #F34022;
+    color: #D95763;
     background-color: #FFF;
-    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #000;
     transition: background linear 0.25s;
 }
 
