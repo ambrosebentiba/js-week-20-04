@@ -20,6 +20,7 @@ main
     position: relative;
 }
 
+/* HELP */
 
 .help .tuto
 {
@@ -83,6 +84,8 @@ main
 {
     display: block;
 }
+
+/* IMAGES */
 
 .timmy_img
 {
@@ -152,15 +155,18 @@ main
     height: 250px;
 }
 
+/* RETURN HOME */
+
 .arrow
 {
-    width: 150px;
-    height: 90px;
+    width: 90px;
+    height: 60px;
     display: block;
     background: url(../semaine-intensive-js-20-04-2020/player_characters_SIJS/GIF/arrow.gif) no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0px; left: 0px;
+    top: 15px; 
+    left: 20px;
 }
 
 .return
@@ -171,7 +177,7 @@ main
     text-decoration: none;
     text-transform: uppercase;
     top: 38px;
-    left: 140px;
+    left: 115px;
     font-size: 17px;
 }
 
@@ -182,6 +188,7 @@ main
     color: #8a8a8a;
 }
 
+/* SCORE */
 
 .container
 {
@@ -194,6 +201,8 @@ main
     margin-bottom: 50px;
     line-height: 50px;
 }
+
+/* BUTTON START */
 
 .start
 {
